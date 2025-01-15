@@ -29,11 +29,13 @@ public class FIFO {
                     Customer c = queue.removeLast();
                     c.setEndTime(System.currentTimeMillis());
                     System.out.println("Customer (" + c.getId() + ") spent " + c.calculateTime() + "ms");
+                    break;
                 case "3":
                     System.out.println("Exiting...");
                     break loop;
                 default:
                     System.out.println("Invalid option.");
+                    break;
             }
         }
     }
