@@ -22,6 +22,11 @@ public class Event implements Comparable<Event> {
     }
 
     @Override
+    public String toString() {
+        return "{eventType: " + type + ", eventTime: " + eventTime + "}";
+    }
+
+    @Override
     public int compareTo(Event other) {
         return Long.compare(this.eventTime, other.eventTime);
     }
